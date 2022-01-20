@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Julius Sans One", sans-serif;
+}
+.container-guess {
+  height: 100vh;
+  background-color: rgb(36, 40, 43);
+  padding: 40px;
+}
+.perfect-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 986px) {
+  .perfect-center {
+    flex-wrap: wrap !important;
+  }
+  .container-guess {
+    height: auto !important;
+  }
+}
+.game-box {
+  height: 300px;
+  width: 400px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 30px;
+  /* border: 2px solid #026583; */
+}
+.game-wrap {
+  margin: 4rem;
+  height: auto;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+  color: #fff;
+  text-decoration: underline rgb(92, 84, 84);
+}
+h2 {
+  font-size: 30px;
+}
+.flex-direction {
+  flex-flow: column;
+}
+.num-entered,
+#num-enter {
+  color: #1b4755;
+}
+.num-entered {
+  font-size: 30px;
+  /* color: #026583; */
+  font-weight: 600;
+}
+.num-message {
+  margin-top: 1rem;
+  font-size: 30px;
+  color: #cf1205;
+  text-align: center;
+}
+.num-enter {
+  margin-top: 1rem;
+  font-size: 40px;
+  font-weight: 600;
+  border: 1px solid #cf1205;
+  padding: 10px;
+}
+#guess-num,
+#check-num {
+  height: 70px;
+  width: 130px;
+  outline: none;
+  font-size: 34px;
+  padding: 5px 8px;
+  margin-top: 1rem;
+}
+#guess-num {
+  border: 1px solid #336372;
+}
+#check-num {
+  background-color: #c73228;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* font-size: 30px; */
+}
+.text-corner {
+  text-align: left;
+  width: 100%;
+}
+.msg-color {
+  color: #04973c;
+}
+.num-enter-bd {
+  border: 1px solid #04973c;
+}
+.display-none {
+  display: none !important;
+}
+.green-bg {
+  background-color: #0ed159;
+}
+.play-again {
+  height: 50px;
+  padding: 16px;
+  background-color: #277d97;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}

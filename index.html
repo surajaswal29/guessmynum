@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- js file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container-guess">
+      <h1>Guess My Number</h1>
+      <div class="game-wrap perfect-center">
+        <div class="game-box perfect-center flex-direction" id="set-msg">
+          <!-- <div class="num-entered">Number Entered</div> -->
+          <!-- <div id="hint-box" class="perfect-center flex-direction display-none"> -->
+          <div id="num-enter" class="num-enter">??</div>
+          <div id="message" class="num-message">Start Guessing...</div>
+          <!-- </div> -->
+        </div>
+        <div class="game-box perfect-center flex-direction">
+          <div class="num-entered">Guess Number</div>
+          <div class="guess-num-input">
+            <input type="number" name="guess-num" id="guess-num" />
+            <button id="check-num">Check</button>
+          </div>
+        </div>
+        <div class="game-box perfect-center flex-direction">
+          <div class="num-entered text-corner">
+            Score: <span id="score">20</span>
+          </div>
+          <div class="num-entered text-corner">
+            High Score: <span id="high-score">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="again-box perfect-center">
+        <button type="reset" class="play-again" id="reset">
+          <i class="fas fa-sync"></i> Play Again
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
